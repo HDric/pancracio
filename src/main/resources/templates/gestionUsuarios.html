@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Informacion de Usuarios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Informacion de Usuarios</h1>
+    <div th:if="${usuario != null}">
+        <dl>
+            <dt>Id</dt>
+            <dd th:text="${usuario.id}"></dd>
+            <dt>Perfil</dt>
+            <dd th:text="${usuario.perfil}"></dd>
+            <dt>Activo</dt>
+            <dd th:text="${usuario.activo}"></dd>
+            <dt>Nombre</dt>
+            <dd th:text="${usuario.nombre}"></dd>
+            <dt>Cedula</dt>
+            <dd th:text="${usuario.cedula}"></dd>
+            <dt>Correo</dt>
+            <dd th:text="${usuario.correo}"></dd>
+        </dl>
+    </div>
+</body>
+</html>
